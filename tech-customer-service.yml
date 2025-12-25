@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: customer-service
+  datasource:
+    name: techCutomerDb_Master
+    url:  jdbc:mysql://localhost:3306/techCutomerDb_Master?serverTimezone=UTC
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false

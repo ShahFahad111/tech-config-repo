@@ -1,0 +1,15 @@
+global:
+    message: Welcome to customer service Dev environment
+server:
+    port: 8082
+message: Hello from customer service Dev!
+spring:  
+  datasource:
+    name: techCutomerDb_Master
+    url: jdbc:mysql://localhost:3306/techCutomerDb_Master?serverTimezone=UTC
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
