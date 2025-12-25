@@ -1,0 +1,15 @@
+global:
+    message: Welcome to order service Dev environment
+server:
+    port: 8084
+message: Hello from order service Dev!
+spring:  
+  datasource:
+    name: techOrderDb_Dev
+    url:  jdbc:mysql://localhost:3306/techOrderDb_Dev?serverTimezone=UTC
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
