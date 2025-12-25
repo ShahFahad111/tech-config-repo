@@ -1,0 +1,15 @@
+global:
+    message: Welcome to order service Prod environment
+server:
+    port: 8085
+message: Hello from order service Prod!
+spring:  
+  datasource:
+    name: techOrderDb_Prod
+    url:  jdbc:mysql://localhost:3306/techOrderDb_Prod?serverTimezone=UTC
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
