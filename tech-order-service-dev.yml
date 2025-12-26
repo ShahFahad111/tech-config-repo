@@ -6,9 +6,9 @@ message: Hello from order service Dev!
 spring:  
   datasource:
     name: techOrderDb_Master
-    url:  jdbc:mysql://localhost:3306/techOrderDb_Master?serverTimezone=UTC
+    url:  jdbc:h2:mem:techOrderDb_Master
     username: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: org.h2.Driver
   jpa:
     hibernate:
       ddl-auto: update
